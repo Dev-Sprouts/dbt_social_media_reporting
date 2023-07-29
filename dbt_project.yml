@@ -3,10 +3,10 @@ version: '0.2.0'
 config-version: 2
 require-dbt-version: [">=1.3.0", "<2.0.0"]
 vars:
-  twitter_posts_report: "{{ ref('twitter_organic__tweets') }}"
-  facebook_posts_report: "{{ ref('facebook_pages__posts_report') }}"
-  linkedin_posts_report: "{{ ref('linkedin_pages__posts') }}"
-  instagram_posts_report: "{{ ref('instagram_business__posts') }}"
+  twitter_posts_report: "{{ ref('banfield_twitter_organic__tweets') }}"
+  facebook_posts_report: "{{ ref('banfield_facebook_pages__posts_report') }}"
+  linkedin_posts_report: "{{ ref('banfield_linkedin_pages__posts') }}"
+  instagram_posts_report: "{{ ref('banfield_instagram_business__posts') }}"
   collback__twitter_enabled: true
   collback__facebook_enabled: true
   collback__linkedin_enabled: true

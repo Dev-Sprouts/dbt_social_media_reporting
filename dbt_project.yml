@@ -11,6 +11,22 @@ vars:
   social_media_rollup__facebook_enabled: true
   social_media_rollup__linkedin_enabled: true
   social_media_rollup__instagram_enabled: true
+
+  ##Facebook Pages schema and database variables
+  facebook_pages_schema: banfield_facebook_pages
+  facebook_pages_database: banfield_facebook_pages
+
+  ##LinkedIn Pages schema and database variables
+  linkedin_pages_schema: banfield_linkedin_pages
+  linkedin_pages_database: banfield_linkedin_pages
+
+  ##Instagram Business schema and database variables
+  instagram_business_schema: banfield_instagram_business
+  instagram_business_database: banfield_instagram_business
+
+  ##Twitter Organic schema and database variables
+  twitter_organic_schema: banfield_twitter_organic
+  twitter_organic_database: banfieldtwitter_organic
 models:
   social_media_reporting:
     +schema: social_media_reporting

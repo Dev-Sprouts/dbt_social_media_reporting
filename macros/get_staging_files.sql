@@ -2,20 +2,20 @@
 
     {% set staging_file = [] %}
 
-    {% if var('social_media_rollup__twitter_enabled') %} 
-    {% set _ = staging_file.append(ref('social_media_reporting__twitter_posts_reporting')) %}
+    {% if var('collback__twitter_enabled') %} 
+    {% set _ = staging_file.append(ref('collback__twitter_posts_reporting')) %}
     {% endif %}
 
-    {% if var('social_media_rollup__facebook_enabled') %} 
-    {% set _ = staging_file.append(ref('social_media_reporting__facebook_posts_reporting')) %}
+    {% if var('collback__facebook_enabled') %} 
+    {% set _ = staging_file.append(ref('collback__facebook_posts_reporting')) %}
     {% endif %}
 
-    {% if var('social_media_rollup__linkedin_enabled') %} 
-    {% set _ = staging_file.append(ref('social_media_reporting__linkedin_posts_reporting')) %}
+    {% if var('collback__linkedin_enabled') %} 
+    {% set _ = staging_file.append(ref('collback__linkedin_posts_reporting')) %}
     {% endif %}
 
-    {% if var('social_media_rollup__instagram_enabled') %} 
-    {% set _ = staging_file.append(ref('social_media_reporting__instagram_posts_reporting')) %}
+    {% if var('collback__instagram_enabled') %} 
+    {% set _ = staging_file.append(ref('collback__instagram_posts_reporting')) %}
     {% endif %}
 
 

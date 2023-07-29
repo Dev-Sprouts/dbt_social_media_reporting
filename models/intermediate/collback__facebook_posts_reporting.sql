@@ -1,4 +1,4 @@
-{{ config(enabled=var('social_media_rollup__facebook_enabled')) }}
+{{ config(enabled=var('collback__facebook_enabled')) }}
 
 with report as (
 

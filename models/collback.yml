@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: social_media_reporting__rollup_report
+  - name: collback__rollup_report
     description: Each record represents a post from a social media account
     tests:
       - dbt_utils.unique_combination_of_columns:

@@ -27,7 +27,7 @@ This package contains a number of models, which all build up to the final `socia
 
 | **model**    | **description**                                                                                                        |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| [social_media_reporting__rollup_report](https://github.com/fivetran/dbt_social_media_reporting/blob/main/models/social_media_reporting__rollup_report.sql) | Each record represents a post from a social media account across selected connectors, including post metadata and metrics. |
+| [collback__rollup_report](https://github.com/fivetran/dbt_social_media_reporting/blob/main/models/collback__rollup_report.sql) | Each record represents a post from a social media account across selected connectors, including post metadata and metrics. |
 
 ## Installation Instructions
 Check [dbt Hub](https://hub.getdbt.com/) for the latest installation instructions, or [read the dbt docs](https://docs.getdbt.com/docs/package-management) for more information on installing packages.
@@ -56,10 +56,10 @@ The package assumes that all connector models are enabled, so it will look to pu
 config-version: 2
 
 vars:
-    social_media_rollup__twitter_enabled: False
-    social_media_rollup__facebook_enabled: False
-    social_media_rollup__linkedin_enabled: False
-    social_media_rollup__instagram_enabled: False
+    collback__twitter_enabled: False
+    collback__facebook_enabled: False
+    collback__linkedin_enabled: False
+    collback__instagram_enabled: False
 ```
 
 Next, you must disable the models in the unwanted connector's related package, which has its own configuration. Disable the relevant models under the models section of your `dbt_project.yml` file by setting the `enabled` value to `false`. 
